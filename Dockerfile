@@ -9,6 +9,6 @@ RUN \
 
 ENV LANG en_US.UTF-8
 
-ENTRYPOINT ["java", "-Djava.awt.headless=true", "-jar", "plantuml.jar", "-p"]
+ENTRYPOINT ["java", "-Djava.awt.headless=true", "-jar", "plantuml.jar", "-charset", "UTF-8", "-p"]
 
 CMD ["-tsvg"]
